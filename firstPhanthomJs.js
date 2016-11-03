@@ -25,3 +25,8 @@ if ( status === "success" ) {
 }
 	phantom.exit(0);
 });
+
+page.onConfirm = function(msg){
+	console.log('in OnConfirm Function');
+	return true;
+}
